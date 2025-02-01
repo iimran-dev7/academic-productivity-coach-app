@@ -6,6 +6,7 @@
 
 import 'package:flutter/material.dart';
 import 'forgot_password_screen.dart';
+import 'chat_screen.dart';
 import 'signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -84,6 +85,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Process login here
                     print('Email: ${_emailController.text}');
                     print('Password: ${_passwordController.text}');
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChatScreen(),
+                      ),
+                      (route) => false,
+                    );
+
                   }
                 },
                 child: const Text('Login'),
