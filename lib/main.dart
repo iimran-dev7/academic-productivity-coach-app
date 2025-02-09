@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
   brightness: Brightness.light,
 
   // Primary Color
-  primaryColor: const Color(0xFFFF9800), // Vibrant Orange
+  primaryColor: const Color(0xFFFF9800), // blue 
 
   // ColorScheme for Material 3 (more dynamic color system)
   colorScheme: const ColorScheme.light(
-    primary: Color(0xFFFF9800), // Vibrant Orange
+    primary: Color(0xFFFF9800), // blue 
     secondary: Color(0xFFFFC107), // Light Beige
     surface: Color(0xFFF5F5DC), // Light Beige (same as background for flat surfaces)
     error: Colors.red,
